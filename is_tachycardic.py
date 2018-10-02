@@ -1,8 +1,10 @@
 
 def is_tachycardic(candidate)
     clean_candidate = candidate.strip().lower()
-    for item in tachy_word:
-        if item == clean_candidate:
+    clean_candidate = ''.join(letter for letter
+                              in clean_candidate if letter.isalpha())
+
+    if clean_candidate == 'tachycardic':
             return true
 
     return false
