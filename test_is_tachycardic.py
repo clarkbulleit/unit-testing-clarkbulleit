@@ -18,6 +18,7 @@ import pytest
     ('tach', False),
     ('mark', False),
     ('tachycar', False),
+    ('achycardic', False),
 ])
 def test_is_tachycardic(candidate, expected):
     from is_tachycardic import is_tachycardic
